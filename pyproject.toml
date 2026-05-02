@@ -1,11 +1,11 @@
 [build-system]
 requires = ["setuptools>=61", "wheel"]
-build-backend = "setuptools.backends._legacy:_Backend"
+build-backend = "setuptools.build_meta"
 
 [project]
-name = "csv_sorter"                # 包名，pip install 时使用
-version = "0.1.0"
-description = "A small tool to sort CSV files by the second column"
+name = "csv_sorter"
+version = "0.2.0"
+description = "A small tool to sort CSV files by the second column, and generate random CSV data"
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
@@ -18,11 +18,12 @@ classifiers = [
 ]
 requires-python = ">=3.8"
 dependencies = [
-    "pandas"                       # 运行依赖
+    "pandas"
 ]
 
 [project.scripts]
-csv-sort = "csv_sorter.process:main"   # 命令 = 模块:函数
+csv-sort    = "csv_sorter.process:main"
+csv-generate = "csv_sorter.generate:main"
 
 [project.urls]
 Homepage = "https://github.com/ChenLinLinC/csv_sorter"
