@@ -5,4 +5,4 @@
 ## 安装
 
 ```bash
-pip install git+https://github.com/你的账户/csv_sorter.git
+pip install git+https://github.com/ChenLinLinC/csv_sorter.git
